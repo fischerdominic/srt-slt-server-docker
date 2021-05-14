@@ -49,4 +49,4 @@ COPY supervisord.conf /etc/srt/supervisord.conf
 EXPOSE 8000:8000/udp
 
 # **** Start ****
-CMD ["/usr/bin/supervisord", "-c", "/etc/srt/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-s", "-c", "/etc/srt/supervisord.conf"]
